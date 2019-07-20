@@ -10,15 +10,28 @@
 	"Export Component": {
 		"prefix": "excomp",
 		"body": [
+			"import React, { Component } from 'react';",
+			"import { Text, View } from 'react-native';",
+			"",
 			"export default class $1 extends Component {",
 			"    render(){",
 			"        return(",
+			"            <View>",
+			"            </View>",
 			"        ); ",
 			"    }",
 			"}"
 		],
 		"description": "Export Component"
 	},
+	"Export Class": {
+		"prefix": "exclass",
+		"body": [
+			"export default class $1 {",
+			"}"
+		],
+		"description": "Export Class"
+	},	
 	"Create Style": {
 		"prefix": "styles",
 		"body": [
