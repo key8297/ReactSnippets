@@ -1,0 +1,88 @@
+{
+	"Export function": {
+		"prefix": "exfunc",
+		"body": [
+			"export function $1($2){",
+			"}  "
+		],
+		"description": "Export function"
+	},
+	"Export Component": {
+		"prefix": "excomp",
+		"body": [
+			"export default class $1 extends Component {",
+			"    render(){",
+			"        return(",
+			"        ); ",
+			"    }",
+			"}"
+		],
+		"description": "Export Component"
+	},
+	"Create Style": {
+		"prefix": "styles",
+		"body": [
+			"const styles = StyleSheet.create({",
+			"    container: {",
+			"        flex: 1,",
+			"        justifyContent: 'center',",
+			"        alignItems: 'center',",
+			"        backgroundColor: '#F5FCFF',",
+			"    },",
+			"    s1: {",
+			"        justifyContent: 'flex-start',",
+			"        alignItems: 'center',",
+			"        backgroundColor: '#F5FCFF',",
+			"    }    ",
+			"});"
+		],
+		"description": "Create Style"
+	},
+	"ctrl1": {
+		"prefix": "cc",
+		"body": [
+			"<${1|View,Text,Button|} />"
+		],
+		"description": "Component with no end tag"
+	},
+	"ctrl2": {
+		"prefix": "ccc",
+		"body": [
+			"<${1|View,Text,Button|}></$1>"
+		],
+		"description": "Component with end tag"
+	},
+	"Constructor": {
+		"prefix": "ctor",
+		"body": [
+			"    constructor(props) {",
+			"        super(props);",
+			"        this.state = {",
+			"            $1",
+			"        };",
+			"    }"
+		],
+		"description": "Constructor"
+	},
+	"SetState": {
+		"prefix": "ss",
+		"body": [
+			"this.setState((prevState, props) => ({$1});"
+		],
+		"description": "SetState"
+	},
+	"Import destructure": {
+		"prefix": "imdeas",
+		"body": [
+			"import { $1 as $2 } from '$3';"
+		],
+		"description": "Import destructure"
+	},
+	"Import": {
+		"prefix": "im",
+		"body": [
+			"import { $1 } from '$2';"
+		],
+		"description": "Import"
+	}
+}
