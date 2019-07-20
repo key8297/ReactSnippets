@@ -55,12 +55,11 @@
 	"Constructor": {
 		"prefix": "ctor",
 		"body": [
-			"    constructor(props) {",
-			"        super(props);",
-			"        this.state = {",
-			"            $1",
-			"        };",
-			"    }"
+			"constructor(props) {",
+			"    super(props);",
+			"    this.state = {        ",
+			"    };",
+			"}"
 		],
 		"description": "Constructor"
 	},
@@ -72,7 +71,7 @@
 		"description": "SetState"
 	},
 	"Import destructure": {
-		"prefix": "imdeas",
+		"prefix": "imas",
 		"body": [
 			"import { $1 as $2 } from '$3';"
 		],
@@ -84,5 +83,26 @@
 			"import { $1 } from '$2';"
 		],
 		"description": "Import"
+	},
+	"console log": {
+		"prefix": "log",
+		"body": [
+			"console.log(\"$1\");"
+		],
+		"description": "console log"
+	},
+	"console warn": {
+		"prefix": "warn",
+		"body": [
+			"console.warn(\"$1\");"
+		],
+		"description": "console warn"
+	},
+	"This state": {
+		"prefix": "ts",
+		"body": [
+			"this.state.$1"
+		],
+		"description": "this.state"
 	}
 }
